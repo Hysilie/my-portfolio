@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light THEME */
+  --main-color: #eee;
+  --text-color : #3E3D3D;
+  --primary-color: #686894;
+  --secondary-color: #FF9D8B;
+  --tertiary-color: #EE8576;
+
+  /* Dark THEME */
+  --main-color-dark: #3E3D3D;
+  --text-color-dark : #eee;
+  --primary-color-dark: #8585C5;
+  --secondary-color-dark: #FFAB9B;
+  --tertiary-color-dark: #FF8E7D;
+
+}
+
+
+body {
+  margin: 0;
+
+  background-color: #eee;
+  
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.navigation-btn{
+  cursor: pointer;
+}
+
+hr { display: block; height: 1px;
+  border: 0; border-top: 1px solid var(--secondary-color);
+  margin: 1em 0; padding: 0; }
