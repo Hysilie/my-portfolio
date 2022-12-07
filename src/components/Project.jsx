@@ -35,7 +35,7 @@ function Project({projet_name, logo, url, repo, duration, tools, projet_type,  m
         setHover(false);
       }} className=" m-6 h-64 w-64 md:h-96 md:w-96 flex items-center justify-center bg-no-repeat bg-center bg-cover " style={{backgroundImage:`url(${logo})`}}>
         {hover ? <div
-           className="h-64 w-64 md:h-96 md:w-96 hover:bg-[#686894]  transition duration-500 flex flex-col text-center items-center justify-content ">
+           className="h-64 w-64 md:h-96 md:w-96 hover:bg-[#686894]  md:transition md:duration-500 flex flex-col text-center items-center justify-content ">
 
 <div className='m-8 space-y-3'>
        <h2 className='text-2xl text-[#eee]'>{projet_name}</h2><br></br>
