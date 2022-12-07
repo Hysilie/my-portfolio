@@ -1,6 +1,6 @@
 import React,  {useState, useEffect, useRef} from 'react'
 
-function Project({projet_name, logo, url, repo, duration, tools, projet_type,  mobile_view  }) {
+function Project({projet_name, logo, url, repo, duration, tools, projet_type,  mobile_view, desktop_view, theme }) {
     const [hover, setHover] = useState(false);
     const [showModal, setShowModal] = React.useState(false);
 
@@ -49,11 +49,12 @@ function Project({projet_name, logo, url, repo, duration, tools, projet_type,  m
                {showModal ? (
                  <>
                    <div
-                     className=" text-[#333] justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                     className=" text-[#333] justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none "
                    >
-                     <div className="relative  h-100  w-100 my-6 mx-auto max-w-3xl bg-[#eee]" >
+                     <div className="relative  h-full  w-full my-6 mx-auto max-w-3xl bg-[#eee] modal-container fixed w-full h-full z-50 overflow-y-auto rounded-lg shadow-lg " >
+                    
                        {/*content*/}
-                       <div ref={modalRef} className=" border-0 h-screen w-full rounded-lg shadow-lg  flex flex-col outline-none focus:outline-none">
+                       <div ref={modalRef} className=" border-0 h-screen w-full  flex flex-col outline-none focus:outline-none">
                          {/*header*/}
                          <div className="flex items-start   justify-between p-5  rounded-t">
                            <h3 className="text-4xl ml-2 md:ml-6">
@@ -82,7 +83,8 @@ function Project({projet_name, logo, url, repo, duration, tools, projet_type,  m
                          </div>
                          <div className='relative flex flex-col justify-center w-full'>
                          <p className='m-2 md:mx-8 md:px-8 font-semibold  text-[#686894]'>overview</p> 
-                           <img src={mobile_view} className=' m-2 grid grid-cols-1 w-2/3 md:mx-8 md:px-8' alt="mobile-view"/> 
+                           <img src={mobile_view} className=' m-2 grid grid-cols-1 w-3/3 md:mx-8 md:px-8' alt="mobile-view"/> 
+                           <img src={desktop_view} className=' grid m-2 grid-cols-1 w-3/3 md:mx-8 md:px-8' alt="desktop-view"/> 
                            </div>
                          </div>
                          {/*footer*/}

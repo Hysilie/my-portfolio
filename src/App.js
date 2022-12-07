@@ -5,12 +5,16 @@ import NavigationBar from "./components/NavigationBar";
 import Home from "./Pages/Home";
 import turtles from "./assets/LittleTurtles-Logo.png";
 import turtlesmobile from "./assets/littleturtles_mobile-transparent.png";
+import turtlesdesktop from "./assets/Littleturtlesdesktop.png";
 import rijks from "./assets/Rijks-Logo.png";
 import rijksmobile from "./assets/rijkart_mobile-transparent.png";
+import rijksdesktop from "./assets/Rijksartdesktop.png";
 import nems from "./assets/Petitsnems-Logo.png";
 import nemsmobile from "./assets/nems_mobile-transparent.png";
+import nemsdesktop from "./assets/littlenemsdesktop.png";
 import games from "./assets/ApiGames-Logo.png";
 import gamesmobile from "./assets/apigames_mobile-transparent.png";
+import gamesdesktop from "./assets/apigamesdesktop.png";
 
 const projects = [
   {
@@ -23,7 +27,7 @@ const projects = [
     url: "https://iris-succi.github.io/little_turtles/",
     logo: turtles,
     mobile_view: turtlesmobile,
-    desktop_view: "https://www.google.com",
+    desktop_view: turtlesdesktop,
   },
   {
     id: 2,
@@ -35,7 +39,7 @@ const projects = [
     url: "https://rijks-art.netlify.app/",
     logo: rijks,
     mobile_view: rijksmobile,
-    desktop_view: "https://www.google.com",
+    desktop_view: rijksdesktop,
   },
   {
     id: 3,
@@ -48,7 +52,7 @@ const projects = [
     url: "https://github.com/Hysilie/Hackathon2022-",
     logo: nems,
     mobile_view: nemsmobile,
-    desktop_view: "https://www.google.com",
+    desktop_view: nemsdesktop,
   },
   {
     id: 4,
@@ -60,7 +64,7 @@ const projects = [
     url: "https://github.com/WildCodeSchool/P2_API-Crew_Lyon-React-Sept-2022",
     logo: games,
     mobile_view: gamesmobile,
-    desktop_view: "https://www.google.com",
+    desktop_view: gamesdesktop,
   },
 ];
 
